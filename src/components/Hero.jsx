@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 
 import {
@@ -361,7 +360,7 @@ export default function Hero() {
             <div className="hero__photo-frame">
 
               <img
-                src="/profile.jpg"
+                src={`${import.meta.env.BASE_URL}profile.jpg`}
                 alt={`Portrait of ${profile.name}`}
                 onError={(event) => {
                   event.currentTarget.style.display = "none";
@@ -509,4 +508,3 @@ export default function Hero() {
     </section>
   );
 }
-
