@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 
 import {
@@ -212,10 +213,11 @@ export default function Hero() {
               </span>
             </button>
 
+            {/* RESUME - FIXED */}
             <a
               className="hero__secondary-button"
-              href={profile.resumeFile}
-              download
+              href={`${import.meta.env.BASE_URL}Renuka-Resume.pdf`}
+              download="Renuka-Resume.pdf"
             >
               <Download size={17} />
 
@@ -508,3 +510,4 @@ export default function Hero() {
     </section>
   );
 }
+
